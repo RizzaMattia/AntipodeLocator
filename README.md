@@ -16,10 +16,7 @@ Antipode Calculator è un'applicazione web che consente agli utenti di trovare l
 - **Flask**: Framework web utilizzato per sviluppare l'applicazione
 - **Database**: SQLite (incluso nella configurazione di base)
 - **Librerie aggiuntive**:
-  - Flask-Session
-  - Flask-WTF
-  - Leaflet (per le mappe interattive)
-  - Bootstrap (per il design del frontend)
+  - Tutti i requisiti presenti nel file ```requirements.txt```
 
 ## Installazione
 
@@ -66,7 +63,7 @@ Puoi configurare l'app modificando il file `config.py` per:
 ## Funzionalità principali
 
 ### Calcolo dell'antipodo
-Inserisci una latitudine e longitudine per ottenere il punto opposto sulla Terra. I risultati verranno mostrati su due mappe separate utilizzando Leaflet.
+Inserisci una latitudine e longitudine per ottenere il punto opposto sulla Terra. I risultati verranno mostrati su due mappe separate.
 
 ### Salvataggio nei preferiti
 Accedi con il tuo account e salva i risultati nei tuoi preferiti per accedervi facilmente in futuro.
@@ -74,51 +71,11 @@ Accedi con il tuo account e salva i risultati nei tuoi preferiti per accedervi f
 ### Gestione dell'account
 Gli utenti registrati possono:
 - Visualizzare il proprio profilo.
-- Eliminare il proprio account (conferma richiesta).
+- Eliminare il proprio account.
 
 ### Mappe interattive
-Utilizza Leaflet per visualizzare le mappe del luogo originale e del suo antipodo. Puoi interagire con le mappe per esplorare ulteriormente le aree.
+Utilizza OpenStreetMap per visualizzare le mappe del luogo originale e del suo antipodo. Puoi interagire con le mappe per esplorare ulteriormente le aree.
 
-## Struttura del progetto
-
-```plaintext
-antipode-calculator/
-├── static/          # File statici (CSS, JavaScript, immagini)
-├── templates/       # Template HTML
-├── app.py           # File principale dell'app Flask
-├── config.py        # Configurazione dell'app
-├── models.py        # Modelli del database
-├── requirements.txt # Librerie richieste
-└── README.md        # Documentazione del progetto
-```
-
-## Contribuire
-
-Siamo aperti a contributi! Se vuoi migliorare questo progetto:
-
-1. Fai un fork del repository.
-2. Crea un branch per le tue modifiche:
-   ```bash
-   git checkout -b nome-branch
-   ```
-3. Fai un commit delle tue modifiche:
-   ```bash
-   git commit -m "Descrizione delle modifiche"
-   ```
-4. Fai push delle modifiche:
-   ```bash
-   git push origin nome-branch
-   ```
-5. Apri una pull request.
-
-## Licenza
-
-Questo progetto è distribuito sotto la licenza MIT. Consulta il file `LICENSE` per ulteriori dettagli.
-
-## Contatti
-
-Per domande o segnalazioni, contatta:
 
 - **Autore**: Mattia Rizza
-- **Email**: mattia.rizza@example.com
-- **GitHub**: [username](https://github.com/username)
+- **Email**: mattia.rizza@samtrevano.ch
